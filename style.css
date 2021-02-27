@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon-sm {
+  width: 7rem;
+}
+
+.icon-bg {
+  width: 13rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style: none;
+  width: 35%;
+}
+
+.link-wrapper {
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+.link-wrapper:hover a::after {
+  transform: translateY(-3px);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  cursor: inherit;
+  font-family: inherit;
+}
+a::after {
+  content: "";
+  transition: all 0.2s ease;
+  width: 100%;
+  height: 3px;
+  background: #4247CF;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.35rem;
+  outline: none;
+  background: #4247CF;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  transform: translateY(-0.1rem);
+}
+
+.btn-no-bg {
+  background: transparent;
+  color: black;
+}
+.btn-no-bg i {
+  color: #4247CF;
+}
+
+.btn-no-bg-active {
+  background: #4247CF;
+  color: white;
+}
+.btn-no-bg-active i {
+  color: white;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  nav {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+  nav ul.row {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
