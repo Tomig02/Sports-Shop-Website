@@ -9,8 +9,32 @@ $font: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-@import "./scss/header", "./scss/general";
+@import "./scss/header", "./scss/general", "./scss/category";
 
+
+@media( max-width: 800px){
+    body{
+        font-size: 0.7em;
+    }
+    nav{
+        padding: 0 2rem;
+        justify-content: space-between;
+        ul.row{
+            display: none;
+        }
+        .burger{
+            display: block;
+        }
+    }
+    .header-text{
+        width: auto;
+        margin: 5em 2em;
+        text-align: center;
+        h1{
+            width: auto;
+        }
+    }
+}
 @media( min-width: 2000px){
     body{
         font-size: 2.5em;

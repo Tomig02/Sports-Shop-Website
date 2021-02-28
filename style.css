@@ -13,7 +13,7 @@ nav {
   position: relative;
 }
 nav .links {
-  width: 50%;
+  width: 60%;
 }
 nav a {
   color: white;
@@ -64,7 +64,7 @@ header {
   height: 100vh;
   color: white;
   background: linear-gradient(#000000ab, #000000ab), url("../images/background.jpg");
-  background-position: center;
+  background-position: left;
   background-size: cover;
 }
 
@@ -78,16 +78,17 @@ header {
   margin: 0 5em 3em 0;
 }
 .header-text h1 {
-  padding: 0.5rem 1rem;
+  padding: 0.2em 0.5em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border: 0.3rem solid #4247CF;
+  border: 0.1em solid #4247CF;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 .header-text h2 {
-  margin: 1rem 0;
+  margin: 2em 0;
+  line-height: 1.5em;
 }
 
 .special-btn {
@@ -112,27 +113,6 @@ header {
   width: 100%;
 }
 
-@media (max-width: 800px) {
-  nav {
-    padding: 0 2rem;
-    justify-content: space-between;
-  }
-  nav ul.row {
-    display: none;
-  }
-  nav .burger {
-    display: block;
-  }
-
-  .header-text {
-    width: auto;
-    margin: 3rem 2rem;
-    text-align: center;
-  }
-  .header-text h1 {
-    width: auto;
-  }
-}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -168,9 +148,10 @@ a::after {
 }
 
 button {
-  padding: 0.5em 1em;
+  padding: 0.4em 0.8em;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.3em;
+  text-transform: uppercase;
   font-size: inherit;
   outline: none;
   background: #4247CF;
@@ -201,6 +182,68 @@ button {
   display: none;
 }
 
+section {
+  margin: 5em 0;
+}
+
+#category {
+  text-align: center;
+}
+#category h2 {
+  margin: 3em 0;
+}
+
+.grid {
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  gap: 10vw 5vw;
+  justify-content: center;
+}
+
+.card-category {
+  width: 30vw;
+  height: 32vw;
+  box-shadow: 0 0 0.6em 0.2em rgba(0, 0, 0, 0.1);
+}
+.card-category .container {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-10%);
+}
+.card-category .container img {
+  height: 65%;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 0.7em;
+  }
+
+  nav {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+  nav ul.row {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+  }
+
+  .header-text {
+    width: auto;
+    margin: 5em 2em;
+    text-align: center;
+  }
+  .header-text h1 {
+    width: auto;
+  }
+}
 @media (min-width: 2000px) {
   body {
     font-size: 2.5em;

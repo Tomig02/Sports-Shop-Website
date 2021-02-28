@@ -5,7 +5,7 @@ nav{
     padding: 0.5rem 2.5rem;
     position: relative;
     .links{
-        width: 50%;
+        width: 60%;
     }
     a{
         color: white;
@@ -53,7 +53,7 @@ header{
     height: 100vh;
     color: white;
     background: linear-gradient(#000000ab, #000000ab), url("../images/background.jpg");
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 .header-text{
@@ -63,14 +63,15 @@ header{
     right: 0;
     margin: 0 5em 3em 0;
     h1{
-        padding: 0.5rem 1rem;
+        padding: 0.2em 0.5em;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        border: 0.3rem solid $main;
+        border: 0.1em solid $main;
         width: max-content;
     }
     h2{
-        margin: 1rem 0;
+        margin: 2em 0;
+        line-height: 1.5em;
     }
 }
 
@@ -94,27 +95,6 @@ header{
     &:hover{
         i{
             width: 100%;
-        }
-    }
-}
-
-@media (max-width: 800px){
-    nav{
-        padding: 0 2rem;
-        justify-content: space-between;
-        ul.row{
-            display: none;
-        }
-        .burger{
-            display: block;
-        }
-    }
-    .header-text{
-        width: auto;
-        margin: 3rem 2rem;
-        text-align: center;
-        h1{
-            width: auto;
         }
     }
 }

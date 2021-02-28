@@ -36,9 +36,10 @@ a{
 }
 
 button{
-    padding: 0.5em 1em;
+    padding: 0.4em 0.8em;
     border: none;
-    border-radius: 0.35rem;
+    border-radius: 0.3em;
+    text-transform: uppercase;
     font-size: inherit;
     outline: none;
     background: $main;
@@ -70,4 +71,8 @@ button{
 
 .hide{
     display: none;
+}
+
+section{
+    margin: 5em 0;
 }
