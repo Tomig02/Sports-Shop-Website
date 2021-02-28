@@ -9,22 +9,33 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav>
-        <img src="./logo-16.svg" class="icon-sm" alt="logo">
-        <ul class="row">
-            <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
-            <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
-            <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
-        </ul>
-        <ul class="row">
-            <li><button class="btn-no-bg">submit <i class="bx bxs-down-arrow"></i></button></li>
-            <li><button class="btn-no-bg">submit <i class="bx bxs-down-arrow"></i></button></li>
-            <li><button class="btn-no-bg">submit <i class="bx bxs-down-arrow"></i></button></li>
-        </ul>
-        <div class="row">
-            <button><i class="bx bxs-cart bx-sm"></i></button>
-            <button class="btn-no-bg burger"><i class="bx bx-menu bx-md"></i></button>
+    <header>
+        <nav>
+            <div class="row links">
+                <img src="./logo-16.svg" class="logo" alt="">
+                <ul class="row">
+                    <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
+                    <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
+                    <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
+                </ul>
+            </div>
+            <div class="row">
+                <button class="nav-btn btn-hover"><i class="bx bxs-cart"></i></button>
+                <button class="nav-btn burger"><i class="bx bx-menu bx-md"></i></button>
+            </div>
+        </nav>
+        <div class="overlay hide">
+            <div class="link-wrapper"><a href="">Lorem, ipsum.</a></div>
+            <div class="link-wrapper"><a href="">Lorem, ipsum.</a></div>
+            <div class="link-wrapper"><a href="">Lorem, ipsum.</a></div>
         </div>
-    </nav>
+        <script src="./javascript/burger.js"></script>
+    
+        <div class="header-text">
+            <h1>Your favorite running wear</h1>
+            <h2>High spec running clothes and footwear for a comfortable running experience</h2>
+            <button class="special-btn">submit <i class="bx bxs-right-arrow bx-bg"></i></button>
+        </div>
+    </header>
 </body>
 </html>
