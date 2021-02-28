@@ -1,19 +1,16 @@
 
-$card-width: 30vw;
+$card-width: 32vw;
 $card-height: 32vw;
 
 #category{
-    text-align: center;
-    h2{
-        margin: 3em 0;
-    }
+    
 }
 
 .grid{
-    padding: 0 10vw;
+
     display: grid;
-    grid-template-columns: repeat(2, $card-width);
-    gap: 10vw 5vw;
+    grid-template-columns: repeat(2, auto);
+    gap: 8vw 10vw;
     justify-content: center;
 }
 .card-category{

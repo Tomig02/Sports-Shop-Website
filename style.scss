@@ -9,7 +9,7 @@ $font: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-@import "./scss/header", "./scss/general", "./scss/category";
+@import "./scss/header", "./scss/general", "./scss/category", "./scss/products", "./scss/footer";
 
 
 @media( max-width: 800px){
@@ -17,13 +17,14 @@ $font: 'Poppins', sans-serif;
         font-size: 0.7em;
     }
     nav{
-        padding: 0 2rem;
-        justify-content: space-between;
         ul.row{
             display: none;
         }
         .burger{
             display: block;
+        }
+        .links{
+            width: auto;
         }
     }
     .header-text{
@@ -33,6 +34,26 @@ $font: 'Poppins', sans-serif;
         h1{
             width: auto;
         }
+    }
+    .card-category{
+        width: 37vw;
+        height: 45vw;
+    }
+    .card-horizontal{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+    .services{
+        flex-direction: column;
+    }
+    .linkContact{
+        flex-direction: column;
+    }
+    .newsletter, .row-links{
+        margin: 1em;
+        width: 100%;
     }
 }
 @media( min-width: 2000px){

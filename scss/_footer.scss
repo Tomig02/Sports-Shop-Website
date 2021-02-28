@@ -1,0 +1,64 @@
+footer{
+    margin-top: 4em;
+    padding-bottom: 3em;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    p{
+        margin: 1em;
+        width: 70%;
+    }
+}
+.services{
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    li{
+        padding: 2em 1em;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.footer-links{
+    margin-top: 2em;
+    li{
+        margin-bottom: 1em;
+        &:last-of-type{
+            margin: 0;
+        }
+    }
+}
+.row-links{
+    width: 60%;
+    margin-top: 2em;
+    align-items: flex-start;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+}
+.input-field{
+    border: none;
+    border-bottom: 0.1em solid $main;
+    padding: 0.5em 1em;
+    background: none;
+    outline: none;
+}
+.input-send{
+    background: transparent;
+    color: $main;
+    i{
+        font-size: 2em;
+    }
+}

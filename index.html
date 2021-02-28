@@ -15,8 +15,8 @@
                 <img src="./logo-16.svg" class="logo" alt="">
                 <ul class="row">
                     <li><div class="link-wrapper"><a href="#category">Category</a></div></li>
-                    <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
-                    <li><div class="link-wrapper"><a href="">Lorem, ipsum.</a></div></li>
+                    <li><div class="link-wrapper"><a href="#products">Best Products</a></div></li>
+                    <li><div class="link-wrapper"><a href="#footer">Footer</a></div></li>
                 </ul>
             </div>
             <div class="row">
@@ -26,9 +26,9 @@
         </nav>
         <!-- burger overlay -->
         <div class="overlay hide">
-            <div class="link-wrapper"><a href="">Lorem, ipsum.</a></div>
-            <div class="link-wrapper"><a href="">Lorem, ipsum.</a></div>
-            <div class="link-wrapper"><a href="">Lorem, ipsum.</a></div>
+            <div class="link-wrapper"><a href="">Category</a></div>
+            <div class="link-wrapper"><a href="">Best Products</a></div>
+            <div class="link-wrapper"><a href="">Footer</a></div>
         </div>
         <script src="./javascript/burger.js"></script>
     
@@ -79,9 +79,146 @@
                 </div>
             </div>
         </section>
-        <section id="products">
 
+        <section id="products">
+            <h2>Best Products</h2>
+            <!-- First product item -->
+            <div class="card-horizontal row left">
+                <img src="./images/products/men_pants.jpg" alt="men pants">
+                <div class="text-container">
+                    <h4>tittle</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Reprehenderit fugit eos tempora nulla voluptas quia 
+                    </p>
+                    
+                    <div class="row">
+                        <p>For Men</p>
+                        <p>Size x</p>
+                    </div>
+                    <div class="row">
+                        <p>$50</p>
+                        <button>buy now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second product item -->
+            <div class="card-horizontal row right">
+                <img src="./images/products/men_tshirt.jpg" alt="men pants">
+                <div class="text-container">
+                    <h4>tittle</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Reprehenderit fugit eos tempora nulla voluptas quia 
+                    </p>
+                    <div class="row">
+                        <p>For Men</p>
+                        <p>Size x</p>
+                    </div>
+                    <div class="row">
+                        <p>$50</p>
+                        <button>buy now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third product item -->
+            <div class="card-horizontal row left">
+                <img src="./images/products/women_tshirt.jpg" alt="men pants">
+                <div class="text-container">
+                    <h4>tittle</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Reprehenderit fugit eos tempora nulla voluptas quia 
+                    </p>
+                    <div class="row">
+                        <p>For Women</p>
+                        <p>Size x</p>
+                    </div>
+                    <div class="row">
+                        <p>$50</p>
+                        <button>buy now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth product item -->
+            <div class="card-horizontal row right">
+                <img src="./images/products/women_pants.jpg" alt="men pants">
+                <div class="text-container">
+                    <h4>tittle</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Reprehenderit fugit eos tempora nulla voluptas quia 
+                    </p>
+                    <div class="row">
+                        <p>For Women</p>
+                        <p>Size x</p>
+                    </div>
+                    <div class="row">
+                        <p>$50</p>
+                        <button>buy now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="">See More</button>
         </section>
+        
+        <footer id="footer">
+            <ul class="row services">
+                <li>
+                    <img class="logo" src="./images/icons/box.svg" alt="">
+                    <h3>Fast shipping</h3>
+                    <p>description Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li>
+                    <img class="logo" src="./images/icons/waranty.svg" alt="">
+                    <h3>Warranty</h3>
+                    <p>description Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li>
+                    <img class="logo" src="./images/icons/shield.svg" alt="">
+                    <h3>Security</h3>
+                    <p>description Lorem ipsum dolor sit amet.</p>
+                </li>
+            </ul>
+            <div class="row linkContact">
+                <ul class="row row-links">
+                    <li>
+                        <h3>About us</h3>
+                        <ul class="footer-links">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Stores</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="">Warranty</a></li>
+                            <li><a href="">Apointments</a></li>
+                            <li><a href="">Delivery</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Folow us</h3>
+                        <ul class="footer-links">
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="newsletter">
+                    <h3>join our newsletter</h3>
+                    <p>Join our newsletter to stay up to date on the latest product.</p>
+                    <form class="input-container">
+                        <input class="input-field" type="email" placeholder="Enter your email here"/>
+                        <button class="input-send"><i class="bx bxs-right-arrow"></i></button>
+                    </form>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
