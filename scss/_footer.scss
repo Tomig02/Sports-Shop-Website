@@ -14,7 +14,6 @@ footer{
     width: 30%;
     p{
         margin: 1em;
-        width: 70%;
     }
 }
 .services{
@@ -51,14 +50,14 @@ footer{
 .input-field{
     border: none;
     border-bottom: 0.1em solid $main;
-    padding: 0.5em 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-left: auto;
     background: none;
     outline: none;
 }
 .input-send{
     background: transparent;
+    margin-right: auto;
     color: $main;
-    i{
-        font-size: 2em;
-    }
 }

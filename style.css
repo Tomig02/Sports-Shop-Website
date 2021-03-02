@@ -9,7 +9,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 1rem;
   position: relative;
 }
 nav .links {
@@ -27,6 +27,7 @@ nav ul li {
 
 .nav-btn {
   background: transparent;
+  transition: all 0.2s ease;
 }
 .nav-btn i {
   color: #4247CF;
@@ -40,17 +41,12 @@ nav ul li {
 .burger {
   display: none;
 }
-.burger:hover {
-  color: #4247CF;
-}
 
 .burger-active {
   transform: rotate(-90deg);
 }
 
 .overlay {
-  position: absolute;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,12 +83,12 @@ header {
   width: max-content;
 }
 .header-text h2 {
-  margin: 2em 0;
+  margin: 1em 0;
   line-height: 1.5em;
 }
 
 .special-btn {
-  padding-right: 2.5em;
+  padding-right: 3em;
   position: relative;
   overflow: hidden;
 }
@@ -119,6 +115,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+i {
+  font-size: 1.2em;
 }
 
 .link-wrapper {
@@ -152,24 +152,25 @@ button {
   border: none;
   border-radius: 0.3em;
   text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
   font-size: inherit;
   outline: none;
   background: #4247CF;
   color: white;
-  font-family: inherit;
-  font-weight: bold;
   cursor: pointer;
-  transition: all 0.1s ease;
 }
 
-.btn-hover::after {
-  content: "";
-  background: #fafafa;
-  width: 0;
-  height: 100%;
+.btn-hover {
+  transition: all 0.3s ease;
 }
-.btn-hover:hover::after {
-  width: 100%;
+.btn-hover i {
+  margin-left: 0.5em;
+}
+.btn-hover:hover {
+  background: white;
+  color: #4247CF;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .row {
@@ -216,7 +217,7 @@ section h2 {
 }
 
 .card-horizontal {
-  margin: 2em auto;
+  margin: 4em auto;
   width: 55%;
   border-radius: 1em;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
@@ -227,7 +228,7 @@ section h2 {
   padding: 1em;
   height: 100%;
 }
-.card-horizontal .text-container .row {
+.card-horizontal .text-container div.row {
   margin: 1em;
   color: #4247CF;
 }
@@ -262,7 +263,6 @@ footer {
 }
 .newsletter p {
   margin: 1em;
-  width: 70%;
 }
 
 .services {
@@ -303,20 +303,20 @@ footer {
 .input-field {
   border: none;
   border-bottom: 0.1em solid #4247CF;
-  padding: 0.5em 1em;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-left: auto;
   background: none;
   outline: none;
 }
 
 .input-send {
   background: transparent;
+  margin-right: auto;
   color: #4247CF;
 }
-.input-send i {
-  font-size: 2em;
-}
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body {
     font-size: 0.7em;
   }
@@ -331,9 +331,13 @@ footer {
     width: auto;
   }
 
+  header {
+    padding: 0 2em;
+  }
+
   .header-text {
     width: auto;
-    margin: 5em 2em;
+    margin: 5em 4em;
     text-align: center;
   }
   .header-text h1 {
@@ -365,14 +369,19 @@ footer {
     width: 100%;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1001px) {
   body {
-    font-size: 2.5em;
+    font-size: 1em;
   }
 }
-@media (min-width: 3000px) {
+@media (min-width: 1500px) {
   body {
-    font-size: 3em;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 2300px) {
+  body {
+    font-size: 2.8em;
   }
 }
 @media (min-width: 4000px) {

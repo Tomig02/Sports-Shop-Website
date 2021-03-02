@@ -12,7 +12,7 @@ $font: 'Poppins', sans-serif;
 @import "./scss/header", "./scss/general", "./scss/category", "./scss/products", "./scss/footer";
 
 
-@media( max-width: 800px){
+@media( max-width: 1000px){
     body{
         font-size: 0.7em;
     }
@@ -27,9 +27,12 @@ $font: 'Poppins', sans-serif;
             width: auto;
         }
     }
+    header{
+        padding: 0 2em;
+    }
     .header-text{
         width: auto;
-        margin: 5em 2em;
+        margin: 5em 4em;
         text-align: center;
         h1{
             width: auto;
@@ -56,14 +59,19 @@ $font: 'Poppins', sans-serif;
         width: 100%;
     }
 }
-@media( min-width: 2000px){
+@media( min-width: 1001px){
     body{
-        font-size: 2.5em;
+        font-size: 1em;
     }
 }
-@media( min-width: 3000px){
+@media( min-width: 1500px){
     body{
-        font-size: 3em;
+        font-size: 1.5em;
+    }
+}
+@media( min-width: 2300px){
+    body{
+        font-size: 2.8em;
     }
 }
 @media( min-width: 4000px){
